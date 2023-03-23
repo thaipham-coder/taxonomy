@@ -1,4 +1,4 @@
-import { Inter as FontSans } from "next/font/google"
+import { Nunito as FontSans } from "next/font/google"
 
 import "@/styles/globals.css"
 import { siteConfig } from "@/config/site"
@@ -8,8 +8,9 @@ import { TailwindIndicator } from "@/components/tailwind-indicator"
 import { Toaster } from "@/components/ui/toaster"
 
 const fontSans = FontSans({
-  subsets: ["latin"],
+  subsets: ["vietnamese"],
   variable: "--font-inter",
+  display: 'swap',
 })
 
 interface RootLayoutProps {
